@@ -1,0 +1,12 @@
+The string encode() method returns encoded version of the given string.
+
+(1) For efficient storage of these strings,
+the sequence of code points are converted into set of bytes.
+The process is known as encoding.
+
+(2) There are various encodings present which treats a string differently.
+The popular encodings being utf-8, ascii, etc.
+
+(3) Using string's encode() method, you can convert unicoded strings into any encodings supported by Python.
+By default, Python uses utf-8 encoding.
+
