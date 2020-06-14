@@ -1,0 +1,30 @@
+* What Lists Can Do
+Let’s say you want to create a computer game based on Go Fish. If you don’t know what Go Fish is, take
+the time now to go read up on it on the internet. To do this you would need to have some way of taking
+the concept of a ”deck of cards” and put it into your Python program. You then have to write Python
+code that knows how to work this imaginary version of a deck of cards so that a person playing your
+game thinks that it’s real, even if it isn’t. What you need is a ”deck of cards” structure, and programmers
+call this kind of thing a ”data structure”.
+What’s a data structure? If you think about it, a ”data structure” is just a formal way to structure
+(organize) some data (facts). It really is that simple. Even though some data structures can get insanely
+complex, all they are is just a way to store facts inside a program so you can access them in different
+ways. They structure data.
+I’ll be getting into this more in the next exercise, but lists are one of the most common data structures
+programmers use. They are simply ordered lists of facts you want to store and access randomly or linearly
+by an index. What?! Remember what I said though, just because a programmer said ”list is a list” doesn’t
+mean that it’s any more complex than what a list already is in the real world. Let’s look at the deck of
+cards as an example of a list:
+1. You have a bunch of cards with values.
+2. Those cards are in a stack, list, or list from the top card to the bottom card.
+3. You can take cards off the top, the bottom, the middle at random.
+4. If you want to find a specific card, you have to grab the deck and go through it one at a time.
+
+* When to Use Lists
+You use a list whenever you have something that matches the list data structure’s useful features:
+1. If you need to maintain order. Remember, this is listed order, not sorted order. Lists do not sort
+for you.
+2. If you need to access the contents randomly by a number. Remember, this is using cardinal numbers
+starting at 0.
+3. If you need to go through the contents linearly (first to last). Remember, that’s what for-loops
+are for.
+Then that’s when you use a list.
