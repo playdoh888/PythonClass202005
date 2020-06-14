@@ -15,3 +15,5 @@ This repo contains all the class works broken down by week.
 * Amazon Link:
     https://www.amazon.com/Python-Programming-Introduction-Computer-Science/dp/1590282752/ref=sr_1_29?dchild=1&keywords=Python&qid=1592141024&s=books&sr=1-29
 
+# docs
+Please refer to "docs" directory for additional documents.
