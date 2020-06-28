@@ -11,6 +11,9 @@ pattern = '\s+'
 # empty string
 replace = ''
 
+result = re.split(pattern, string)
+print(result)
+
 new_string = re.sub(pattern, replace, string)
 print(new_string)
 

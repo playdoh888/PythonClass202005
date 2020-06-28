@@ -2,6 +2,8 @@
 seq_string = 'Python'
 print(list(reversed(seq_string)))
 
+temp = list(reversed(seq_string))
+
 # for tuple
 seq_tuple = ('P', 'y', 't', 'h', 'o', 'n')
 print(list(reversed(seq_tuple)))
@@ -15,7 +17,7 @@ seq_list = [1, 2, 4, 3, 5]
 print(list(reversed(seq_list)))
 
 class Vowels:
-    vowels = ['a', 'e', 'i', 'o', 'u']
+    vowels = ('a', 'e', 'i', 'o', 'u')
 
     def __reversed__(self):
         return reversed(self.vowels)

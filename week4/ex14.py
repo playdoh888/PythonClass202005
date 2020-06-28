@@ -10,6 +10,7 @@ print(d1)
 d2 = datetime.datetime(1989, 4, 24, hour=10,
                        tzinfo=tz.gettz("America/Chicago"))
 
+print(d2)
 
 print(d1.hour > d2.hour)
 print(d1 > d2)

@@ -3,7 +3,7 @@ f.write("Woops! I have deleted the content!")
 f.close()
 
 #open and read the file after the appending:
-f = open("demofile3.txt", "r")
+f = open("demofile3", "r")
 print(f.read())
 
 """
@@ -19,4 +19,5 @@ print(f.read())
 f = open("myfile.txt", "x")
 
 # Create a new file if it does not exist:
-f = open("myfile.txt", "w")
+f = open("myfile2.txt", "w")
+f.write("Woops! I have deleted the content!")

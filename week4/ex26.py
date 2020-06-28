@@ -13,4 +13,7 @@ if match:
 else:
     print("pattern not found")
 
+result = re.findall(pattern, string)
+print(result)
+
 # Output: 801 35

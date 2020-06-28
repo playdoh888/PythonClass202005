@@ -21,7 +21,7 @@ print(my_set)
 # here [3, 4] is a mutable list
 # this will cause an error.
 
-my_set = {1, 2, [3, 4]}
+# my_set = {1, 2, [3, 4]}
 
 # Distinguish set and dictionary while creating empty set
 

@@ -42,3 +42,6 @@ print(min(more_numbers))
 newcoral= list(coral)
 
 print(newcoral)
+
+newcoral[0] = 'red coral'
+print(newcoral)

@@ -15,11 +15,12 @@ print(list(enumerate(s1, 2)))
 
 # printing the tuples in object directly
 for ele in enumerate(l1):
+
     print(ele)
 
 # changing index and printing separately
-for count,ele in enumerate(l1,100):
-    print(count,ele)
+for count, i in enumerate(l1,100):
+    print(count, i)
 
 my_list = ['apple', 'banana', 'grapes', 'pear']
 for c, value in enumerate(my_list, 1):

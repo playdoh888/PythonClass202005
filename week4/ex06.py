@@ -15,7 +15,7 @@ print(my_set)
 
 # add multiple elements
 # Output: {1, 2, 3, 4}
-my_set.update([2, 3, 4])
+my_set.update([2, 3, 4, 5])
 print(my_set)
 
 # add list and set
@@ -49,8 +49,10 @@ print(my_set)
 # not present in my_set
 # you will get an error.
 # Output: KeyError
-
-my_set.remove(2)
+try:
+    my_set.remove(2)
+except Exception as err:
+    print("Remove nonexiting item")
 
 # initialize my_set
 # Output: set of unique elements
