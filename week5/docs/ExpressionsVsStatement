@@ -1,0 +1,25 @@
+
+Expressions vs Statements
+
+Like we discussed earlier, lambdas can use only "one expression" as the body of the lambda function.
+Please note here we did NOT say "one statement".
+
+"Statements" and "expressions" are two different things but they can be confusing so let me try to clarify the differences.
+
+In programming languages, a statement is a line of code that does something but it doesn’t evaluate to a value.
+For example, an "if" statement, a "for loop", a "while loop", all of these are examples of statements.
+You can’t simply replace the statement with a value because statements don’t evaluate to a value.
+Expressions on the other hand are evaluated to a value.
+You can easily replace all the expressions in your programs with some values and your program will work correctly.
+
+For example:
+
+    3 + 5 is an expression that is evaluation to 8
+
+    10 > 5 is an expression that is evaluated to True
+
+    True and (5 < 3) is an expression that is evaluated to False
+
+Lambda’s body has to be an expression because the value of this expression is the return value of the function.
+Make sure you remember this point when you are writing your next lambda function 🙂
+

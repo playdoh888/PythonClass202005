@@ -14,7 +14,7 @@ print(my_set)
 
 # we can make set from a list
 # Output: {1, 2, 3}
-my_set = set([1, 2, 3, 2])
+my_set = {1, 2, 3, 2}
 print(my_set)
 
 # set cannot have mutable items

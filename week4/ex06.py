@@ -31,12 +31,12 @@ print(my_set)
 
 # discard an element
 # Output: {1, 3, 5, 6}
-my_set.discard(4)
+item_being_discarded = my_set.discard(4)
 print(my_set)
 
 # remove an element
 # Output: {1, 3, 5}
-my_set.remove(6)
+item_being_removed = my_set.remove(6)
 print(my_set)
 
 # discard an element
