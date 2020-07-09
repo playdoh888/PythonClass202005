@@ -7,3 +7,12 @@
 5 	/delete/{id} 	DELETE 	JSON 	http://dummy.restapiexample.com/api/v1/delete/2 	Delete an employee record 	Details
 
 """
+import requests
+
+# Making a GET request
+x = requests.get('https://w3schools.com/python/demopage.htm')
+
+# check status code for response received
+# success code - 200
+print(x.content)
+
