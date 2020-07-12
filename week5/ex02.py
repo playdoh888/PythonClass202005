@@ -13,6 +13,6 @@ print(numbersSquare)
 def myfunc(a, b):
   return a + b
 
-x = map(myfunc, ('apple', 'banana', 'cherry'), ('orange', 'lemon', 'pineapple'))
-sum_of_two = set(x)
+x = map(myfunc, ('apple', 'banana', 'cherry', 'apple'), ('orange', 'lemon', 'pineapple', 'orange'))
+sum_of_two = list(x)
 print(sum_of_two)

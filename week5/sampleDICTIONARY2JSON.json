@@ -1,0 +1,14 @@
+[
+    {
+        "genre": "comedy",
+        "name": "spaceballs"
+    },
+    {
+        "genre": "tragedy",
+        "name": "gone with the wind"
+    },
+    {
+        "genre": "comedy",
+        "name": "titanic"
+    }
+]

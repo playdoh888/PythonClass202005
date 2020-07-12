@@ -15,7 +15,7 @@ Only if f returns True will the element be produced by the iterator,
 which is the return value of filter(function, sequence).
 """
 
-fibonacci = [0,1,1,2,3,5,8,13,21,34,55]
+fibonacci = [0, 1, 1, 2, 3, 5, 8, 13, 21, 34, 55]
 odd_numbers = list(filter(lambda x: x % 2, fibonacci))
 print(odd_numbers)
 # [1, 1, 3, 5, 13, 21, 55]
@@ -24,7 +24,7 @@ even_numbers = list(filter(lambda x: x % 2 == 0, fibonacci))
 print(even_numbers)
 # [0, 2, 8, 34]
 
-even_numbers = list(filter(lambda x: x % 2 -1, fibonacci))
+even_numbers = list(filter(lambda x: x % 2 - 1, fibonacci))
 print(even_numbers)
 # [0, 2, 8, 34]
 
@@ -32,14 +32,16 @@ print(even_numbers)
 # list of letters
 letters = ['a', 'b', 'd', 'e', 'i', 'j', 'o']
 
+
 # function that filters vowels
 def filterVowels(letter):
     vowels = ['a', 'e', 'i', 'o', 'u']
 
-    if(letter in vowels):
+    if (letter in vowels):
         return True
     else:
         return False
+
 
 filteredVowels = filter(filterVowels, letters)
 

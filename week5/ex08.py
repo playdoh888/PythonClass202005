@@ -30,7 +30,15 @@ add = lambda *args: sum(args)
 print(add(2, 3, 4))
 # Prints 9
 
+def myfunc(n):
+  return len(n)
+
 # **args
 add = lambda **kwargs: sum(kwargs.values())
 print(add(x=2, y=3, z=4))
 # Prints 9
+
+# **args
+add = lambda **kwargs: myfunc(kwargs.values())
+print(add(x="apple", y="banana", z="cherry"))
+

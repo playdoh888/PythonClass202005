@@ -5,7 +5,7 @@
     * output exactly two characters: \ and n
     * duplicate the character next to the digraph
     * stop its execution
-    * break the output line
+    break the output line
 ******************************************************
 """
 
@@ -18,7 +18,8 @@ print("Python wants to say:\nHello World!")
     * its position within the argument list
     * its value
     * its connection with existing variables
-    * the argument’s name specified along with its value 
+    
+    the argument’s name specified along with its value 
 
 ******************************************************
 """
@@ -94,7 +95,7 @@ print(f"{1 / 1}")
 
     * any number of arguments (excluding zero)
     * just one argument
-    * any number of arguments (including zero)
+    any number of arguments (including zero)
     * not more than five arguments
 ******************************************************
 """

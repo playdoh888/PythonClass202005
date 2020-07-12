@@ -6,3 +6,10 @@ L = [1, 2, 3, 4]
 
 result = map(lambda x: x**2, L)
 print(list(result))
+
+
+# def myfunc(n):
+#     return len(n)
+#
+# x = map(myfunc, ('apple', 'banana', 'cherry'))
+
