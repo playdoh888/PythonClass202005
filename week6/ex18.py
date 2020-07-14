@@ -1,20 +1,21 @@
-# pickling.py
-import pickle
+import argparse
 
-class example_class:
-    a_number = 35
-    a_string = "hey"
-    a_list = [1, 2, 3]
-    a_dict = {"first": "a", "second": 2, "third": [1, 2, 3]}
-    a_tuple = (22, 23)
+my_parser = argparse.ArgumentParser(prog='ex18', description='List the content of a folder')
 
-my_object = example_class()
+my_parser.add_argument('--input', action='store', type=str, dest="infile", required=True, help='The file to be copied')
+my_parser.add_argument('--output', action='store', type=str, dest="outfile", required=True, help='The new file')
+my_parser.add_argument('--count', action='store', type=int, default='9', help='Integer used to replace letter "e"')
 
-my_pickled_object = pickle.dumps(my_object)  # Pickling the object
-print(f"This is my pickled object:\n{my_pickled_object}\n")
+args = my_parser.parse_args()
 
-my_object.a_dict = None
+with open(args.infile) as in_file, open(args.outfile, 'w') as out_file:
+    for line in in_file:
+        if args.count:
+            parsed_line = line.replace('e', str(args.count))
+        else:
+            parsed_line = line.replace('e', 'E')
+        out_file.write(parsed_line)
 
-my_unpickled_object = pickle.loads(my_pickled_object)  # Unpickling the object
-print(
-    f"This is a_dict of the unpickled object:\n{my_unpickled_object.a_dict}\n")
+
+print(f"Input file name: {args.infile}")
+print(f"Input file name: {args.outfile}")

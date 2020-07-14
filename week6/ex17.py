@@ -1,41 +1,25 @@
-# Python3 program to illustrate store  
-# efficiently using pickle module  
-# Module translates an in-memory Python object  
-# into a serialized byte stream—a string of  
-# bytes that can be written to any file-like object. 
+# Import the argparse library
+import argparse
 
-import pickle
+import os
+import sys
 
+# Create the parser
+my_parser = argparse.ArgumentParser(description='List the content of a folder')
 
-def storeData():
-    # initializing data to be stored in db 
-    Omkar = {'key': 'Omkar', 'name': 'Omkar Pathak',
-             'age': 21, 'pay': 40000}
-    Jagdish = {'key': 'Jagdish', 'name': 'Jagdish Pathak',
-               'age': 50, 'pay': 50000}
+# Add the arguments
+my_parser.add_argument('Path',
+                       metavar='path',
+                       type=str,
+                       help='the path to list')
 
-    # database 
-    db = {}
-    db['Omkar'] = Omkar
-    db['Jagdish'] = Jagdish
+# Execute the parse_args() method
+args = my_parser.parse_args()
 
-    # Its important to use binary mode 
-    dbfile = open('examplePickle', 'ab')
+input_path = args.Path
 
-    # source, destination 
-    pickle.dump(db, dbfile)
-    dbfile.close()
+if not os.path.isdir(input_path):
+    print('The path specified does not exist')
+    sys.exit()
 
-
-def loadData():
-    # for reading also binary mode is important 
-    dbfile = open('examplePickle', 'rb')
-    db = pickle.load(dbfile)
-    for keys in db:
-        print(keys, '=>', db[keys])
-    dbfile.close()
-
-
-if __name__ == '__main__':
-    storeData()
-    loadData()
+print('\n'.join(os.listdir(input_path)))
