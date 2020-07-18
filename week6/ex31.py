@@ -11,11 +11,11 @@ sum = count = done = 0
 average = 0.0
 
 while (done != -1):
-    rating = float(input("Enter next rating (1-5), -1 for done: "))
-#       print("Enter next rating (1-5), -1 for done")
-#       float(input("Enter next rating (1-5), -1 for done")) *
-#       input "Enter next rating (1-5), -1 for done")
-#       input("Enter next rating (1-5), -1 for done: ")
+    rating =
+#  print("Enter next rating (1-5), -1 for done")
+#* float(input("Enter next rating (1-5), -1 for done")) *
+#  input "Enter next rating (1-5), -1 for done")
+#  input("Enter next rating (1-5), -1 for done: ")
 
     if rating == -1:
         break
@@ -25,14 +25,18 @@ while (done != -1):
 
 average = float(sum/count)
 
-#print("The average star rating for the new coffee is:".format(average, '.2f'))
-#output("The average star rating for NetVerZleep coffee is:" format(average, '.2f))
-#console.input('The average star rating for the new coffee is:' format(average, '2d'))
-#printline("The average star rating for the new coffee is:" {average, '2f'})
-#print("The average star rating for the new coffee is:" format.average.{2d}
-# print("The average star rating for the new coffee is: " + format(average, '.2f'))
-print("The average star rating for the new coffee is: " + format(average, '.2f'))
+#  output("The average star rating for the new coffee is:" +
+#  console.input('The average star rating for the new coffee is:" +
+#  printline("The average star rating for the new coffee is:" +
+#* print("The average star rating for the new coffee is:" +
 
+
+#* format(average, '.2f'))
+# format(average, '2d'))
+# {average, '2f})
+# format.average.{2d}
+
+print("The average star rating for the new coffee is:" + format(average, '.2d'))
 """
 Return value from format()
 The format() function returns a formatted representation of a given value specified by the format specifier.

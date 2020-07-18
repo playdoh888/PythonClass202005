@@ -20,14 +20,14 @@ while(score != -1):
     sum += score
     count += 1
 average_score = sum / count
-print("%-20s, your average score is: %4.1f"%(name, average_score))
+print("?, your average score is: ?" % (name, average_score))
 
-#%-20s
-#%-20i
-#%-20d
-#%-20f
+#   %-20i
+#   %-20d
+#   %-20f
+#*  %-20s
 
-#1.4s
-#4.1f
-#4.1s
-#1.4f
+#   %1.4s
+#*  %4.1f
+#   %4.1s
+#   %1.4f
