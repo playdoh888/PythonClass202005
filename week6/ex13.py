@@ -4,11 +4,11 @@ myURL = 'periship.sharefileftp.com'
 myUserName = 'periship/jack.wang888@gmail.com'
 myPassword = 'Sharefile.123'
 
-file_orig = 'CompanyABC/IN/newfile.png'
+file_orig = 'CompanyABC/Test/ABC_Company.txt'
 
 with ftplib.FTP(myURL, myUserName, myPassword) as ftp:
     try:
-        res = ftp.rename(file_orig, 'newfile2.png')
+        res = ftp.rename(file_orig, 'CompanyABC.txt')
     except ftplib.all_errors as error:
         print(f'Error renaming file on server: {error}')
 

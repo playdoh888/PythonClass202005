@@ -32,7 +32,9 @@ with open('docs/xmlfile-70_1.png', 'rb') as f:
     wdir = session.pwd()
     print(wdir)
 
-    session.cwd('CompanyABC/IN')
+    session.cwd('CompanyABC/Test')
+    wdir = session.pwd()
+    print(wdir)
     session.storbinary('STOR %s' % 'mstest1.png', f)
 session.quit()
 

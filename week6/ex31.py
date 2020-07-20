@@ -11,9 +11,9 @@ sum = count = done = 0
 average = 0.0
 
 while (done != -1):
-    rating =
+    rating = float(input("Enter next rating (1-5), -1 for done"))
 #  print("Enter next rating (1-5), -1 for done")
-#* float(input("Enter next rating (1-5), -1 for done")) *
+#* float(input("Enter next rating (1-5), -1 for done"))
 #  input "Enter next rating (1-5), -1 for done")
 #  input("Enter next rating (1-5), -1 for done: ")
 
@@ -24,6 +24,8 @@ while (done != -1):
     count += 1
 
 average = float(sum/count)
+
+print("The average star rating for the new coffee is:" + format(average, '.2f'))
 
 #  output("The average star rating for the new coffee is:" +
 #  console.input('The average star rating for the new coffee is:" +

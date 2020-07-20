@@ -8,7 +8,7 @@ file_orig = 'mstest1.png'
 
 with ftplib.FTP(myURL, myUserName, myPassword) as ftp:
     try:
-        ftp.cwd('CompanyABC/IN')
+        ftp.cwd('CompanyABC/Test')
         wdir = ftp.pwd()
         print(wdir)
 

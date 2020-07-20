@@ -2,7 +2,6 @@
 # The program will send messages based on how many miles the customer logs.
 # You create the following Python code. Line numbers are included for reference only.
 
-
     name = input("What is your name? ")
     return name
 

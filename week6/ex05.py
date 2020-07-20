@@ -10,7 +10,7 @@
 import requests
 
 # Making a GET request
-x = requests.get('https://w3schools.com/python/demopage.htm')
+x = requests.get('https://www.peripharma.com/')
 
 # check status code for response received
 # success code - 200
