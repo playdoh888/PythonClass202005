@@ -1,13 +1,14 @@
-import numpy as np
+import pandas as pd
 
-myPythonList = [1,9,8,3]
-numpy_array_from_list = np.array(myPythonList)
+df = pd.read_csv('WPP2019_TotalPopulationBySex.csv')
 
-print(numpy_array_from_list)
+print(df.axes)
 
-print(numpy_array_from_list + 10)
+print(df["PopMale"].mean())
+
+print(df.groupby(['Location']).mean())
 
 
-np_array_with_string = np.array(['jack', 'david', 'john', 'sheryl'])
-print(np_array_with_string)
-print(np_array_with_string + 10)
+
+
+
