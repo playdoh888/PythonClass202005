@@ -58,7 +58,7 @@ import csv
 my_parser = argparse.ArgumentParser(description='File processing ... ')
 
 # Add the arguments
-my_parser.add_argument('--tail_filename',
+my_parser.add_argument('--jack_filename',
                        action='store',
                        type=str,
                        dest="tail_filename",
