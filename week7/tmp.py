@@ -1,3 +1,0 @@
-fd = open("jack", "r")
-
-

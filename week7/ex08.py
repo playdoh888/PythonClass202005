@@ -12,6 +12,6 @@ print(df.groupby(['Location'])['PopMale'].mean())
 
 
 
-# print("World Average Population Break Down:")
-# print(df[['Location', 'PopMale', 'PopFemale']].mean())
+print("World Average Population Break Down:")
+print(df[['Location', 'PopMale', 'PopFemale']].mean())
 
