@@ -24,4 +24,3 @@ print(inspect.getmembers(jack, predicate=inspect.isfunction))
 print (dir(jack))
 
 
-
