@@ -10,12 +10,14 @@ while it's actual meaning is just to namemangle to prevent accidental access[1]
 class A:
     def __init__(self,v):
         self.__a = v + 1
+        self._b = v + 1
 
     def get_a(self):
         return self.__a
 
 a = A(0)
-print(a.__a)
+print(a._b)
+#print(a.__a)
 print(a.get_a())
 
 
