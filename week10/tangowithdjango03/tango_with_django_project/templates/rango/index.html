@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title_block %}
+Rango says: Hello!
+{% endblock %}
+
+{% block company_name %}
+AVTech
+{% endblock %}
+
+{% block content %}
+    <h1>Rango says...</h1>
+    <div>
+        hey there partner! <br/>
+        <strong>{{ boldmessage }}</strong><br/>
+    </div>
+    <div>
+        <a href="/rango/about/">About</a><br/>
+        <img src="{% static 'images/avtech.png' %}"
+             alt="Logo of AVTech"/> <!-- New line -->
+    </div>
+{% endblock %}
