@@ -9,8 +9,10 @@
 </head>
 <body>
     <p> This tutorial has been put
-        together by {{ author_name }}.
+        together by <b>{{ author_name }}</b>.
     </p>
     <p><a href='/'>Back to home page</a></p>
+    <img src="{% static 'images/about.jpg' %}"
+         alt="Logo of AVTech"/> <!-- New line -->
 </body>
 </html>
